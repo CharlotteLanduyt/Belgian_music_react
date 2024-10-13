@@ -1,0 +1,53 @@
+@import '../Variables'
+    
+#loading_page
+    height: 100vh
+    width: 100vw
+    position: fixed
+    z-index: 999
+    color: $middle_grey
+    background: linear-gradient(#ffffff93,#ffffff93), url('../../images/texture.jpg')
+    display: flex
+    align-items: center
+    justify-content: center
+
+    h1
+        font-family: $massive_font
+        font-size: 5vw
+        background-image: url('../../images/grain_effect.png')
+        background-size: 150%
+        background-position: -80px
+        background-clip: text
+        -webkit-background-clip: text
+        color: #1f222237
+        transition: ease-in-out 0.5s
+
+    p
+        margin-top: 10vh
+        font-size: 20px
+        font-family: $massive-font
+        background-image: url('../../images/grain_effect.png')
+        background-size: 180%
+        background-position: -80px
+        background-clip: text
+        -webkit-background-clip: text
+        color: #58606087
+
+    #progress_bar
+        border-radius: 2px
+        overflow: hidden
+        width: 100vw
+        height: 5vh
+        transition: ease-in-out 0.5s
+        position: absolute
+        margin: 0
+        display: flex
+        align-items: center
+        justify-content: center
+
+        div
+            background-color: $yellow_green
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center

@@ -1,0 +1,109 @@
+@import '../../Variables'
+    
+#artistes
+    height: 80vh
+    width: 95vw
+    display: flex
+    justify-content: space-between
+    position: relative
+    padding-top: 30px
+
+    &>div
+        display: flex
+        width: 30%
+
+        h4
+            span
+                font-style: italic
+                opacity: 0.4
+
+            div
+                font-size: 35px
+                color: $middle_grey
+                font-style: italic
+        
+        &>p
+            font-size: 12px
+            color: $light_grey
+            margin: 0 50px
+            text-justify: auto
+            text-align: right
+            transition: 2s
+            opacity: 1
+
+
+    #vignette_image
+        width: 70%
+        height: 50vh
+        position: relative
+
+        &>div
+            position: absolute
+            background-color: #fff
+            height: 100%
+            width: 100%
+            border-radius: 3px
+            color: $light_grey
+            transition: 2s
+            right: 0
+
+            div
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                width: 100%
+                height: 100%
+                opacity: 0
+                transition: 2s
+
+                button
+                    border: none
+                    background: none
+                    font-size: 8px
+                    font-weight: 300
+                    color: $middle_grey
+                    letter-spacing: 3px
+                    display: flex
+                    justify-content: space-between
+                    padding: 5px 0
+                    transition: ease-in-out 0.5s
+                    font-family: furoreregular, sans-serif
+
+                    i
+                        font-size: 15px
+                        transition: 1s
+
+                button:hover
+                     
+                    color: $dark_grey
+                
+                p
+                    font-family: bluu_nexttitling
+                    padding-top: 20px
+                    color: $light_grey
+                    font-size: 12px
+                    width: 15vw
+                    overflow: hidden
+                    transition: 1s
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+
+                    a
+                        margin: 39px 5px
+                        font-style: italic
+                        width: auto
+                        padding: 5px 10px
+                        text-align: center
+                        border-radius: 5px
+                        border: solid 0.5px #b3b3b4
+                        color: $dark_grey
+                        transition: 0.5s
+                        letter-spacing: 1px
+                        font-size: 9px
+
+
+        .biggerImage
+            padding: 0 30px
+            width: 81vw
+            height: 70vh

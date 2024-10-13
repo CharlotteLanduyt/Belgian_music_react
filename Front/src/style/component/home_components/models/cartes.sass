@@ -1,0 +1,88 @@
+@import '../../../Variables'
+    
+#cartes
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+    widht: 100%
+    z-index: 1
+
+    .carte
+        position: absolute
+        height: 75%
+        width: 18vw
+        z-index: 2
+
+        &>div
+            border: solid #5c5c5c29 0.5px
+            background-color: #ffffff
+            width: 100%
+
+        .ticket
+            height: 20%
+            border-radius: 10px
+            border-top: dotted 2.5px #dfe3c6
+            font-size: 12px
+            display: flex
+            align-items: center
+
+            button
+                margin: 0 5px
+                border: solid #5c5c5c29 0.5px
+                background: none
+                padding: 10px
+                width: 100%
+                color: $middle_grey
+                transition: ease-in-out 0.5s
+                
+
+            button:first-of-type
+                margin-left: 30px
+                border-radius: 25px 5px 5px 5px
+
+            button:last-of-type
+                margin-right: 30px
+                border-radius: 5px 5px 25px 5px
+
+            button:hover
+                 
+                background: $yellow_green
+                border: #fff
+                color: #fff                
+
+
+        .image
+            height: 80%
+            border-radius: 10px
+            border-bottom-style: none
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+
+            .image_text
+                height: 50%
+                width: 100%
+                transform: rotate(-90deg)
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                color: $middle_grey
+
+                div
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    font-size: 20px
+
+                h1
+                    font-size: 45px
+
+            #click
+                position: absolute
+                height: 100%
+                width: 100%
+                top: 0
+                background-color: #ffbfbf00

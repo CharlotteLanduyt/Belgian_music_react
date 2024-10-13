@@ -1,0 +1,41 @@
+#global_menu
+    height: 95vh
+    width: 100vw
+    display: flex
+    flex-direction: column
+    justify-content: center
+    overflow: hidden
+    transition: ease-in-out 0.5s
+    
+
+    div
+        display: flex
+        align-items: center
+        margin: 10px 0
+        justify-content: center
+
+        a
+            font-size: 2vh
+            transition: ease-in-out 1s
+            margin: -20px
+            opacity: 0
+            font-family: $massive_font
+            min-width: 10vw
+            text-align: center
+
+        a:hover
+            color: $dark_grey
+
+        button
+            font-size: 12vh
+            transition: ease-in-out 1s
+            color:#bac3c35d
+            background-image: url('../../../images/grain_effect.png')
+            background-size: 180%
+            background-position: -80px
+            background-clip: text
+            -webkit-background-clip: text
+
+        .menu_link_hover
+            font-size: 16vh
+            color:#6f747433

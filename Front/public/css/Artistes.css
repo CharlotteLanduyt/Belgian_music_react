@@ -1,0 +1,107 @@
+#artistes {
+  height: 100vh;
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 30px;
+}
+#artistes > div {
+  display: flex;
+  width: 30%;
+}
+#artistes > div h4 span {
+  font-family: bluu_nexttitling;
+  font-style: italic;
+  opacity: 0.4;
+}
+#artistes > div h4 div {
+  opacity: 0.6;
+  font-size: 35px;
+  color: #000000;
+  font-family: bluu_nexttitling;
+  font-style: italic;
+}
+#artistes > div > p {
+  font-family: bluu_nexttitling;
+  font-size: 12px;
+  color: rgba(57, 59, 63, 0.4431372549);
+  margin: 0 50px;
+  text-justify: auto;
+  text-align: right;
+  transition: 2s;
+  opacity: 1;
+}
+#artistes #vignette_image {
+  width: 70%;
+  height: 50vh;
+  position: relative;
+}
+#artistes #vignette_image > div {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  color: rgba(182, 192, 198, 0.4196078431);
+  transition: 2s;
+  right: 0;
+}
+#artistes #vignette_image > div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 2s;
+}
+#artistes #vignette_image > div div button {
+  border: none;
+  background: none;
+  font-size: 8px;
+  font-weight: 300;
+  color: rgba(57, 59, 63, 0.5607843137);
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+#artistes #vignette_image > div div button i {
+  font-size: 15px;
+  transition: 1s;
+}
+#artistes #vignette_image > div div button:hover {
+   
+}
+#artistes #vignette_image > div div p {
+  font-family: bluu_nexttitling;
+  padding-top: 20px;
+  color: rgba(57, 59, 63, 0.5607843137);
+  font-size: 12px;
+  width: 15vw;
+  overflow: hidden;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#artistes #vignette_image > div div p a {
+  margin: 39px 5px;
+  font-family: bluu_nexttitling;
+  font-style: italic;
+  width: auto;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 0.5px #b3b3b4;
+  color: #b3b3b4;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  font-size: 9px;
+}
+#artistes #vignette_image .biggerImage {
+  padding: 0 30px;
+  width: 81vw;
+  height: 70vh;
+}

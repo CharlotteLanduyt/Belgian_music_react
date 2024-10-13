@@ -1,0 +1,78 @@
+#cartes {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  widht: 100%;
+  z-index: 1;
+}
+#cartes .carte {
+  position: absolute;
+  height: 65%;
+  width: 15vw;
+  z-index: 2;
+}
+#cartes .carte div {
+  border: solid rgba(92, 92, 92, 0.5725490196) 0.5px;
+  background-color: #ffffff;
+  width: 100%;
+}
+#cartes .carte .ticket {
+  height: 20%;
+  border-radius: 10px;
+  border-top: dotted 2.5px #dfe3c6;
+  padding: 10px;
+  color: rgba(24, 24, 22, 0.768627451);
+}
+#cartes .carte .image {
+  height: 80%;
+  border-radius: 10px;
+  border-bottom-style: none;
+  padding: 10px;
+}
+#cartes .carte #click {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background-color: rgba(255, 191, 191, 0);
+  border: none;
+}
+
+#vitrine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  background: #ccff00;
+  opacity: 0.9;
+  border-radius: 45%/15%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+}
+#vitrine #text {
+  color: #ccff00;
+  width: 100%;
+  font-size: 150px;
+  margin-top: 60px;
+  background-color: #ffffff;
+  overflow: hidden;
+  padding-bottom: 20px;
+  white-space: nowrap;
+}
+#vitrine #text #slider {
+  animation: slide 3s linear infinite;
+  white-space: nowrap;
+  font-family: bluu_nexttitling;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-29.5%);
+  }
+}

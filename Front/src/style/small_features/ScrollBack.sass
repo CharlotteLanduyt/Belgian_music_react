@@ -1,0 +1,43 @@
+#scroll_back
+  position: fixed
+  bottom: 80px
+  right: 20px
+  font-size: 18px
+  font-family: $massive_font
+  letter-spacing: 2px
+  background-color: #ffffff17
+  height: 40px
+  width: 40px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $light_grey
+  border: none
+  backdrop-filter: blur(4px)
+  transition: ease-in-out 0.5s
+  opacity: 0
+
+  &:hover
+    color: $dark_grey
+
+  &:hover #label
+    width: 5vw
+    padding: 15px
+    left: -250%
+    opacity: 1
+
+  #label
+    font-size: 10px
+    position: absolute
+    left: 0%
+    background-color: #ffffff84
+    top: -40px
+    padding: 0
+    border-radius: 2px
+    width: 0
+    overflow: hidden
+    transition: ease-in-out 0.5s
+    white-space: nowrap
+    transform-origin: right
+    opacity: 0

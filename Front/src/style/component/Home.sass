@@ -1,0 +1,93 @@
+@import './home_components/Introduction'
+@import './home_components/Concerts'
+@import './home_components/Styles'
+@import './home_components/Testimonials'
+@import './home_components/Contact'
+
+
+@import '../Variables'
+    
+#home
+    width: 100vw
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    #home_big_header
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        margin: 10vh 0
+        
+
+        #big_header_oval
+            margin-top: 4vh
+            background-color: $yellow_green
+            width: 65vw
+            height: 20vh
+            position: absolute
+            border-radius: 50%
+            z-index: -1
+
+        h1
+            font-size: 18vw
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            color:#3f444430
+            font-family: $massive_font
+            mix-blend-mode: multiply
+            background-image: url('../../images/grain_effect.png')
+            background-size: 180%
+            background-position: center 
+            -webkit-background-clip: text
+            background-clip: text
+            z-index: 2
+
+            span
+                color:#3f444430
+                font-family: $massive_font
+                background-image: url('../../images/grain_effect.png')
+                background-size: 800%
+                background-position: center 
+                -webkit-background-clip: text
+                background-clip: text
+
+            span#l
+                display: flex
+                position: relative
+
+                #window
+                    height: 7%
+                    width: 50%
+                    position: absolute
+                    background-color:  #ffffff
+                    bottom: 17%
+                    right: 8%
+                    border-radius: 5px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+                        
+            span#t
+                display: flex
+                position: relative
+
+                #window
+                    height: 6%
+                    width: 50%
+                    position: absolute
+                    background-color: #ffffff
+                    top: 27.5%
+                    right: 8%
+                    border-radius: 5px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+
+
+                

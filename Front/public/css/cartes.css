@@ -1,0 +1,40 @@
+#cartes {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  widht: 100%;
+  z-index: 1;
+}
+#cartes .carte {
+  position: absolute;
+  height: 65%;
+  width: 15vw;
+  z-index: 2;
+}
+#cartes .carte div {
+  border: solid rgba(92, 92, 92, 0.5725490196) 0.5px;
+  background-color: #ffffff;
+  width: 100%;
+}
+#cartes .carte .ticket {
+  height: 20%;
+  border-radius: 10px;
+  border-top: dotted 2.5px #dfe3c6;
+  padding: 10px;
+  color: rgba(24, 24, 22, 0.768627451);
+}
+#cartes .carte .image {
+  height: 80%;
+  border-radius: 10px;
+  border-bottom-style: none;
+  padding: 10px;
+}
+#cartes .carte #click {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background-color: rgba(255, 191, 191, 0);
+  border: none;
+}

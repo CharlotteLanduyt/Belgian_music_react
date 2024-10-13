@@ -1,0 +1,49 @@
+#deco_sentence
+    font-size: 14px
+    color: $light_grey
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 6vh
+    z-index: 999
+
+
+#home_nav
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    position: fixed
+    width: 100%
+    left: 0
+    z-index: 997
+    backdrop-filter: blur(8px)
+    color: $dark_grey
+    background: #ebe8da52
+    color: $middle_grey
+    transition: ease-in-out 0.5s
+
+    navbar
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 95%
+        height: 100%
+
+        a
+            font-size: 16px
+            margin: 15px 0
+                
+
+        button
+            font-size: 20px
+            font-size: 18px
+            margin: 0 8px
+            font-family: $massive_font
+            background: none
+            border: none
+            color: $middle_grey
+
+        button:nth-child(2)
+            transform: rotate(90deg)
