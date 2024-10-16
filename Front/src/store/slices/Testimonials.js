@@ -6,72 +6,72 @@ export const testimonialSlice = createSlice({
     value: 
         [
             {
-            stars: 2,
-            name: "Jeanne",
-            surname: "Untel",
-            testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
-            posted_date: "29.06.24"
+                stars: 2,
+                name: "Name",
+                surname: "Surname",
+                testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
+                posted_date: "00.00.24"
             },
             {
                 stars: 4,
-                name: "Jeanne",
-                surname: "Untel",
+                name: "Name",
+                surname: "Surname",
                 testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
                 posted_date: "29.06.24"
             },
             {
                 stars: 5,
-                name: "Jeanne",
-                surname: "Untel",
+                name: "Name",
+                surname: "Surname",
                 testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
                 posted_date: "29.06.24"
             },
             {
                 stars: 3,
-                name: "Jeanne",
-                surname: "Untel",
+                name: "Name",
+                surname: "Surname",
                 testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
                 posted_date: "29.06.24"
             },
             {
                 stars: 4,
-                name: "Jeanne",
-                surname: "Untel",
+                name: "Name",
+                surname: "Surname",
                 testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
                 posted_date: "29.06.24"
             },
             {
                 stars: 4,
-                name: "Jeanne",
-                surname: "Untel",
+                name: "Name",
+                surname: "Surname",
                 testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
                 posted_date: "29.06.24"
             },
             {
                 stars: 2,
-                name: "Jeanne",
-                surname: "Untel",
+                name: "Name",
+                surname: "Surname",
                 testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
                 posted_date: "29.06.24"
             },
             {
                 stars: 5,
-                name: "Jeanne",
-                surname: "Untel",
+                name: "Name",
+                surname: "Surname",
                 testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
                 posted_date: "29.06.24"
             },
             {
                 stars: 5,
-                name: "Jeanne",
-                surname: "Untel",
+                name: "Name",
+                surname: "Surname",
                 testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
                 posted_date: "29.06.24"
             },
             {
                 stars: 3,
-                name: "Jeanne",
-                surname: "Untel",
+                name: "Name",
+                surname: "Surname",
                 testimonial: "This website is my go-to source for all things Belgian music! The concert updates and artist profiles are always spot on.",
                 posted_date: "29.06.24"
             },

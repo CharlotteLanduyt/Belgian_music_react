@@ -3,14 +3,14 @@ import { useEffect } from "react"
 export const Cursor = () => {
 
     useEffect(()=>{
-        let cursor = document.getElementById('new_page_cursor')
+        const cursor = document.getElementById('new_page_cursor')
 
         document.addEventListener('mousemove', (e)=>{
             cursor.style.left = e.clientX - (cursor.offsetHeight/2) + 'px'
             cursor.style.top = e.clientY - (cursor.offsetHeight/2) + window.scrollY + 'px'
         })
 
-        let hoverElements = document.querySelectorAll('a, button')
+        const hoverElements = document.querySelectorAll('a, button')
 
         hoverElements.forEach((element)=>{
             element.addEventListener('mouseover',()=>{
@@ -24,7 +24,7 @@ export const Cursor = () => {
 
 
 
-        let my_cards = document.querySelectorAll('.carte .image')
+        const my_cards = document.querySelectorAll('.card .image')
 
         my_cards.forEach((element)=>{
             element.addEventListener('mouseover',()=>{

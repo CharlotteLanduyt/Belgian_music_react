@@ -1,55 +1,35 @@
-import React, {useState,useEffect} from 'react'
-import { Outlet, NavLink } from 'react-router-dom'
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export const Menu = (props) => {
+    const [hoveredDiv, setHoveredDiv] = useState(1);
 
-    useEffect(()=>{
-        let global_menu = document.getElementById('global_menu')
-        let global_menu_link = global_menu.querySelectorAll('button')
+    function mouseLinkHandler(index) {
+        setHoveredDiv(index)
+    }
 
-        global_menu_link.forEach((element) => {
-            element.addEventListener('mouseover',(e)=>{
-                global_menu_link.forEach((element)=>{
-                    element.className = ''
-
-                    element.parentNode.querySelectorAll('a').forEach((element)=>{
-                        element.style.margin = '-20px'
-                        element.style.opacity = 0
-                    })
-                })
-
-                e.target.className='menu_link_hover'
-
-                e.target.parentNode.querySelectorAll('a').forEach((element)=>{
-                    element.style.margin = ' 0 50px'
-                    element.style.opacity = 1
-                })
-            })
-        })
-    },[])
-
-
-    return(
-        <div style={{height: !props.open_menu && '0vh'}} id="global_menu">
+    return (
+        <div className={ !props.open_menu ? 'close_menu' : ''} id="global_menu">
             
-            <div>
-                <NavLink>Our News</NavLink>
-                <button>News</button>  
-                <NavLink>Community Blog</NavLink>
+            <div onMouseOver={() => mouseLinkHandler(0)} className={hoveredDiv === 0 ? 'hover' : ''}>
+                <NavLink to="#">Our News</NavLink>
+                News
+                <NavLink to="#">Community Blog</NavLink>
             </div>
             
-            <div>
-                <NavLink>Discover</NavLink>
-                <button>Artists</button>
-                <NavLink>Our falling for</NavLink>
+            <div onMouseOver={() => mouseLinkHandler(1)} className={hoveredDiv === 1 ? 'hover' : ''}>
+                <NavLink to="#">Discover</NavLink>
+                Artists
+                <NavLink to="#">Our falling for</NavLink>
             </div>
 
-            <div>
-                <NavLink>Concerts</NavLink>
-                <button>Events</button>
-                <NavLink>Festivals</NavLink>
+            <div onMouseOver={() => mouseLinkHandler(2)} className={hoveredDiv === 2 ? 'hover' : ''}>
+                <NavLink to="#">Concerts</NavLink>
+                Events
+                <NavLink to="#">Festivals</NavLink>
             </div>
-             
+
+            <NavLink to="#" id="about_us_link">About us</NavLink>
         </div>
-    )
+    );
 }

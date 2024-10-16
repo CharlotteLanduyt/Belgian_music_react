@@ -4,7 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 export const Contact = () => {
     let [testiStars, setTestiStars] = useState(5)
 
-    let myStars = (e) => {
+    const myStars = (e) => {
         if(e.target.className === 'star full' ){
             testiStars -= 1
             e.target.className = 'star out'

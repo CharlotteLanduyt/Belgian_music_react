@@ -15,13 +15,13 @@ export const Base = () => {
   let [percent, setPercent] = useState(0)
 
   useEffect(()=>{
-    let imageUrls = [
+    const imageUrls = [
         '../images/grain_effect.png',
         '../images/texture.jpg'
     ]
     let loadedImagesCount = 0
 
-    let imageLoaded = () => {
+    const imageLoaded = () => {
         loadedImagesCount += 1
 
         if(loadedImagesCount === imageUrls.length) {

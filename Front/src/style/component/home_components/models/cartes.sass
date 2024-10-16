@@ -1,24 +1,29 @@
 @import '../../../Variables'
     
-#cartes
+#cards
     position: absolute
     display: flex
     align-items: center
     justify-content: center
-    height: 100%
+    height: auto
     widht: 100%
     z-index: 1
 
-    .carte
+    .card
         position: absolute
-        height: 75%
-        width: 18vw
+        height: 550px
+        width: 300px
         z-index: 2
+        transition: ease-in-out 1s
 
         &>div
             border: solid #5c5c5c29 0.5px
             background-color: #ffffff
             width: 100%
+            background-image: url('../../../../images/canva_image_black.png')
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
 
         .ticket
             height: 20%
@@ -27,6 +32,7 @@
             font-size: 12px
             display: flex
             align-items: center
+            
 
             button
                 margin: 0 5px
@@ -47,10 +53,7 @@
                 border-radius: 5px 5px 25px 5px
 
             button:hover
-                 
-                background: $yellow_green
-                border: #fff
-                color: #fff                
+                background: $yellow_green               
 
 
         .image
@@ -61,6 +64,9 @@
             align-items: center
             justify-content: center
             position: relative
+
+            *
+                pointer-events: none
 
             .image_text
                 height: 50%
@@ -86,3 +92,16 @@
                 width: 100%
                 top: 0
                 background-color: #ffbfbf00
+
+
+@media (max-width: 600px)
+    #cards
+        .card
+            height: 450px
+            width: 250px
+
+@media (max-width: 600px)
+    #cards
+        display: none
+
+

@@ -3,12 +3,12 @@ import { configureStore } from '@reduxjs/toolkit'
 // slices
 import testimonialSlice from './slices/Testimonials'
 import concertSlice from './slices/Concerts'
-import vitrineSlice from './slices/Vitrine'
+import introductionSlice from './slices/Introduction'
 
 export default configureStore({
   reducer: {
     testimonials: testimonialSlice,
     concerts: concertSlice,
-    vitrine: vitrineSlice,
+    vitrine: introductionSlice,
   },
 })

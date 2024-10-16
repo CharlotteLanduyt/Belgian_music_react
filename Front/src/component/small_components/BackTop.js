@@ -1,6 +1,6 @@
 export const BackTop = ( ) => {
     window.addEventListener('scroll', function() {
-        let backToTopButton = document.getElementById("scroll_back");
+        const backToTopButton = document.getElementById("scroll_back");
   
         if (window.pageYOffset > 450) {
             backToTopButton.style.opacity = 1;

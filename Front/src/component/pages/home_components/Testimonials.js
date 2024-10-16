@@ -15,20 +15,20 @@ export const Testimonials = () => {
     let newTesti = getRandomTestimonials(testimonial, 7)
 
 
-    function test(direction){
-        let divTesti = document.querySelectorAll('.testi_div')
+    function slidingTestimonial(direction){
+        const divTesti = document.querySelectorAll('.testi_div')
 
         if (direction === "left"){
             let maDiv = divTesti[divTesti.length - 1]
             let duplicateTesti = maDiv.cloneNode(true)
-            let container = document.querySelector('#slider_testimonials div')
+            const container = document.querySelector('#slider_testimonials div')
             container.insertBefore(duplicateTesti, container.firstChild)
 
             maDiv.remove()
         }else{
             let maDiv = divTesti[0]
             let duplicateTesti = maDiv.cloneNode(true)
-            let container = document.querySelector('#slider_testimonials div')
+            const container = document.querySelector('#slider_testimonials div')
             container.appendChild(duplicateTesti)
 
             maDiv.remove()
@@ -37,7 +37,7 @@ export const Testimonials = () => {
 
     return(
         <section id="testimonials">
-            <button onClick={() => test("left")}> <i class="bi bi-arrow-bar-left"></i> </button>
+            <button onClick={() => slidingTestimonial("left")}> <i class="bi bi-arrow-bar-left"></i> </button>
             <div id="slider_testimonials">
                 <div>
                     {
@@ -66,7 +66,7 @@ export const Testimonials = () => {
                 </div>
             </div>
 
-            <button onClick={() => test("right")}> <i class="bi bi-arrow-bar-right"></i> </button>
+            <button onClick={() => slidingTestimonial("right")}> <i class="bi bi-arrow-bar-right"></i> </button>
         </section>
     )
 }
